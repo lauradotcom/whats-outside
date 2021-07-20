@@ -3,7 +3,11 @@ import './CurrentConditions.css';
 
 const CurrentConditions = props => {
   return (
-    <div></div>
+    <div className="conditions">
+      <div className="card"></div>
+      <div className="card"></div>
+      <div className="card"></div>
+    </div>
   )
 }
 

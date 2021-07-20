@@ -1,0 +1,8 @@
+.conditions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  border: 2px solid pink;
+}
