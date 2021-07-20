@@ -1,6 +1,9 @@
 .conditions {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10rem;
+  justify-content: center;
+  padding: 5vh 10vw;
 }
 
 .card {

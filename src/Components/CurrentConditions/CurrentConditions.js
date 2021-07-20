@@ -1,10 +1,11 @@
 import React from 'react';
+import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import './CurrentConditions.css';
 
 const CurrentConditions = props => {
   return (
     <div className="conditions">
-      <div className="card"></div>
+      <CurrentWeather />
       <div className="card"></div>
       <div className="card"></div>
     </div>
