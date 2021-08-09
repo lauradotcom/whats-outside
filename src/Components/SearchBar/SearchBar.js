@@ -13,11 +13,17 @@ const SearchBar = props => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=${API_KEY}`).then((resp) => {
-      props.onSubmit(resp.data);
-      setZipCode('');
-    })
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=${API_KEY}`)
+      .then((response) => {
+        console.log(response.data);
+        props.onSubmit(response.data);
+        setZipCode('');
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
+  
   return (
     <form onSubmit={handleSubmit}>
       <div>
